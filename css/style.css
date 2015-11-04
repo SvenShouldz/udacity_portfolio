@@ -10,7 +10,7 @@ body, header, section, article img, div, h1, h2, h3, h4, a, p, main {
     line-height: 1;
 }
 
-#wrap {
+.wrap {
     width: 100%;
     height: 100%;
 }
@@ -36,7 +36,7 @@ header {
     padding: 0 0 20px 0;
 }
 
-#headTitle {
+.title {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     text-align: right;
@@ -44,12 +44,12 @@ header {
     margin: 20px 20px 0 0;
 }
 
-#headTitle h1 {
+.title h1 {
     font-size: 10vw;
     font-weight: 100;
 }
 
-#headTitle h2 {
+.title h2 {
     font-size: 5vw;
     font-weight: 400;
     line-height: 2;
@@ -64,7 +64,8 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
-#mainHero {
+/* - USING SRCSET
+.hero {
     background-image: url(../img/herocss.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,8 +73,9 @@ main {
     width: 100%;
     height: 28vh;
 }
+*/
 
-#mainBottom {
+.bottom {
     color: #747474;
     padding: 5vh 0 0 0;
 }
@@ -85,7 +87,7 @@ main h3 {
     padding: 7vh 0 5vh 5vw;
 }
 
-.bottomWork {
+.work {
     width: 90vw;
     height: auto;
     margin: 0 5vw 5vh 5vw;
@@ -94,17 +96,17 @@ main h3 {
     justify-content: center;
 }
 
-.bottomWork img {
+.work img {
     width: 100%;
     height: auto;
 }
 
-.textPos {
+.text {
     width: 100%;
     flex: 2;
 }
 
-.textPos h4 {
+.text h4 {
     font-size: 8vw;
     text-transform: uppercase;
     padding: 20px 0 0 0;
@@ -112,20 +114,21 @@ main h3 {
     text-align: center;
 }
 
-.textPos a:hover p {
+.text a:hover{
     text-decoration: none;
 }
 
-.textPos a {
+.text a {
     text-decoration: none;
-}
-
-.textPos p {
-    font-size: 5vw;
     color: #bcbbbb;
     text-decoration: underline;
     text-align: center;
     font-weight: 100;
+}
+
+.text p {
+    font-size: 5vw;
+
     margin: 2vh 0 0 0;
 }
 
@@ -140,7 +143,7 @@ main h3 {
         padding: 5vh 0 0 0;
     }
 
-    #mainHero {
+    .hero {
         height: 35vh;
         background-position: right center;
     }
@@ -150,31 +153,31 @@ main h3 {
         font-size: 6vw;
     }
 
-    .bottomWork {
+    .work {
         flex-direction: row;
         justify-content: flex-start;
     }
 
-    .bottomWork img {
+    .work img {
         width: 50%;
         height: 50%;
         max-height: 300px;
     }
 
-    .textPos {
+    .text {
         width: 50%;
         margin: -2vh 0 0 5vw;
     }
 
-    .textPos h4 {
+    .text h4 {
         font-size: 6vw;
         text-align: left;
     }
 
-    .textPos p {
+    .text p {
         font-size: 2.5vw;
         text-align: left;
-    };
+    }
 }
 
 /* MEDIA QUERIE 1024-1600px */
@@ -185,20 +188,20 @@ main h3 {
         width: 10vw;
     }
 
-    #headTitle h1 {
+    .title h1 {
         font-size: 6vw;
     }
 
-    #headTitle h2 {
+    .title h2 {
         font-size: 2vw;
     }
 
-    #mainHero {
+    .hero {
         height: 70vh;
         background-position: right center;
     }
 
-    #mainBottom {
+    .bottom {
         display: flex;
         padding: 0;
     }
@@ -208,34 +211,34 @@ main h3 {
         padding: 5vh 0 3vh 2vw;
     }
 
-    .bottomWork {
+    .work {
         width: 33.3%;
         padding: 20px;
         margin: 0;
         box-sizing: border-box;
     }
 
-    .bottomWork img {
+    .work img {
         height: 100%;
     }
 
-    .textPos {
+    .text {
         text-align: center;
     }
 
-    .textPos h4 {
+    .text h4 {
         font-size: 2.5vw;
     }
 
-    .textPos p {
+    .text p {
         font-size: 1.5vw;
-    };
+    }
 }
 
 /* MEDIA QUERIE 1600px+ */
 
 @media screen and (min-width: 1600px) {
-    #wrap {
+    .wrap {
         width: 1600px;
         height: 100%;
         margin: auto;
@@ -245,20 +248,20 @@ main h3 {
         width: 7vw;
     }
 
-    #headTitle h1 {
+    .title h1 {
         font-size: 4vw;
     }
 
-    #headTitle h2 {
+    .title h2 {
         font-size: 1.5vw;
     }
 
-    #mainHero {
+    .hero {
         height: 70vh;
         background-position: right center;
     }
 
-    #mainBottom {
+    .bottom {
         display: flex;
         padding: 0;
     }
@@ -268,26 +271,26 @@ main h3 {
         padding: 5vh 0 3vh 2vw;
     }
 
-    .bottomWork {
+    .work {
         width: 33.3%;
         padding: 20px;
         margin: 0;
         box-sizing: border-box;
     }
 
-    .bottomWork img {
+    .work img {
         height: 100%;
     }
 
-    .textPos {
+    .text {
         text-align: center;
     }
 
-    .textPos h4 {
+    .text h4 {
         font-size: 2vw;
     }
 
-    .textPos p {
+    .text p {
         font-size: 1vw;
     }
 }
